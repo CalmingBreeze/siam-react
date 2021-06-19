@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#navBar {
+  background-color: #000000;
+  margin: 0;
+  padding: 15px 0;
+}
+
+#logo {
+  float: left;
+  max-width: 300px;
+  margin-right: 50px;
+  width: 20%;
+  text-align: left;
+  padding: 0 10px;
+}
+#logo .picture {
+  margin-right: 15px;
+}
+#logo .picture, #logo .title {
+  display: inline-block;
+}
+#logo .team {
+  width: 30px;
+  height: 30px;
+}
+#logo .goal {
+  width: 25px;
+  height: 25px;
+}
+#logo .title {
+  line-height: 30px;
+  vertical-align: text-bottom;
+}
+#logo .gameName {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+#logo .version {
+  color: white;
+  font-size: 0.6em;
+  margin-left: 15px;
+}
+#logo .team:nth-child(1) {
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  line-height: 15px;
+  text-align: center;
+}
+
+#siamGameActions {
+  display: flex;
+  flex-direction: row;
+}
+#siamGameActions > button {
+  margin-right: 15px;
+}
+
+#home-splash {
+  margin-bottom: 15px;
+}
+
+.board-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-status {
+  background-color: Plum;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+#Board .boardRow {
+  display: flex;
+}
+#Board .boardRow > div {
+  border: 2px solid Brown;
+  width: 30px;
+  height: 30px;
+}
+#Board .open {
+  background-color: PaleGreen;
+}
+#Board .piece.Up {
+  transform: rotate(90deg);
+}
+#Board .piece.Right {
+  transform: scaleX(-1);
+}
+#Board .piece.Down {
+  transform: rotate(-90deg);
+}
+#Board .piece.elephant {
+  background-image: url("./assets/img/elephant.png");
+  background-position: no-repeat center;
+  background-size: 30px 30px;
+}
+#Board .piece.mountain {
+  background-image: url("./assets/img/mountain.png");
+  background-position: no-repeat center;
+  background-size: 30px 30px;
+}
+#Board .piece.rhinoceros {
+  background-image: url("./assets/img/rhinoceros.png");
+  background-position: no-repeat center;
+  background-size: 30px 30px;
+}
+
+/*# sourceMappingURL=App.css.map */

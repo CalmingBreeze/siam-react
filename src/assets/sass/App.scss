@@ -1,0 +1,174 @@
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#navBar {
+  background-color: #000000;
+  margin: 0;
+  padding: 15px 0;
+}
+
+#logo {
+  float: left;
+  max-width: 300px;
+  margin-right: 50px;
+  width: 20%;
+  text-align: left;
+  padding: 0 10px;
+
+  .picture {
+    margin-right: 15px;
+  }
+
+  & .picture, & .title {
+    display: inline-block;
+  }
+
+  .team {
+    width: 30px;
+    height: 30px;
+  }
+
+  .goal {
+    width: 25px;
+    height: 25px;
+  }
+
+  .title {
+    line-height: 30px;
+    vertical-align: text-bottom;
+  }
+
+  .gameName {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  .version {
+    color: white;
+    font-size: .6em;
+    margin-left: 15px;
+  }
+
+  .team:nth-child(1) {
+    @include transform(scaleX(-1));
+  }
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 20px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px 0;
+  line-height: 15px;
+  text-align: center;
+}
+
+#siamGameActions {
+  display: flex;
+  flex-direction: row;
+
+  & > button {
+    margin-right:15px;
+  }
+}
+
+#home-splash {
+  margin-bottom: 15px;
+}
+
+.board-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-status {
+  background-color: Plum;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+#Board {
+
+  .boardRow {
+    display: flex;
+
+    & > div {
+      border: 2px solid Brown;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .open {
+    background-color: PaleGreen;
+  }
+
+  .piece {
+    &.Up {
+      transform: rotate(90deg);
+    }
+
+    &.Right {
+      transform: scaleX(-1);
+    }
+
+    &.Left {
+      //none
+    }
+
+    &.Down {
+      transform: rotate(-90deg);
+    }
+
+    &.elephant {
+      background-image: url('./assets/img/elephant.png');
+      background-position: no-repeat center;
+      background-size: 30px 30px;
+    }
+
+    &.mountain {
+      background-image: url('./assets/img/mountain.png');
+      background-position: no-repeat center;
+      background-size: 30px 30px;
+    }
+
+    &.rhinoceros {
+      background-image: url('./assets/img/rhinoceros.png');
+      background-position: no-repeat center;
+      background-size: 30px 30px;
+    }
+  }
+
+
+}
