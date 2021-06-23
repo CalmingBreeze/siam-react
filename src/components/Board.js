@@ -3,11 +3,11 @@ import React from 'react';
 import Square from './Square';
 
 const NEWGAME = [
-  {open: false},{open: false},{open: false},{open: false},{open: false},
+  {pieceType:"E", direction:"Right", open: false},{open: false},{open: false},{open: false},{pieceType:"R", direction:"Left", open: false},
   {pieceType:"E", direction:"Right", open: false},{open: false},{pieceType:"M", open: false},{open: false},{pieceType:"R", direction:"Left", open: false},
   {pieceType:"E", direction:"Right", open: false},{open: false},{pieceType:"M", open: false},{open: false},{pieceType:"R", direction:"Left", open: false},
   {pieceType:"E", direction:"Right", open: false},{open: false},{pieceType:"M", open: false},{open: false},{pieceType:"R", direction:"Left", open: false},
-  {open: false},{open: false},{open: false},{open: false},{open: false}
+  {pieceType:"E", direction:"Right", open: false},{open: false},{open: false},{open: false},{pieceType:"R", direction:"Left", open: false}
 ];
 
 class Board extends React.Component {
